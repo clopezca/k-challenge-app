@@ -1,0 +1,88 @@
+@import ../../style/base
+
+.modal
+    padding: 0
+    margin: 0
+    width: 100vw
+    max-width: 1920px
+    min-width: 375px
+    height: 100vh
+    background-color: $gray
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    &__intro
+        max-width: 16rem
+        min-width: 16rem
+        color: $white
+        font-weight: 400
+        font-size: 3rem
+        font-family: $jost
+        text-align: center
+    &__box
+        max-width: 16rem
+        min-width: 16rem
+        margin: 1rem 0
+        height: 10rem
+        display: flex
+        flex-direction: column
+        text-align: -webkit-center
+
+.box
+    &__input
+        padding-left: .3rem 
+        margin: .7rem 0
+        border: 0
+        outline: none
+        box-shadow: none
+        height: 1.6rem
+        font-family: $jost
+        color: $white
+        font-size: $size-14
+        background-color: $gray
+        border: 0.08rem solid $white
+    &__input::placeholder
+        color: $white
+        opacity: 0.7
+    &__input:focus::placeholder
+        color: $white
+        opacity: 0.2
+        transition: 0.4s
+.buttons  
+    &__send
+        margin: 0.8rem  
+        color: $white
+        background-color: $gray
+        border: $line-medium solid $white
+    &__send:hover
+        color: $blue
+        background-color: $white
+        border: $line-medium solid $white
+    &__send:active
+        color: $white
+        background-color: $gray-clair-mid
+        border: $line-medium solid $white
+
+.buttons
+    margin: 0.8rem
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    &__send
+        padding: 0.2rem
+        width: 5rem
+        font-family: $jost
+        font-size: $size-14
+        font-weight: 200
+        cursor: pointer
+        outline: none
+        -webkit-appearance: none
+        -moz-appearance: none
+        border-radius: 0.2rem
+
+.error-message
+        color: $red
+        font-size: $size-14
+        font-family: $jost
+        text-align: center
